@@ -1,0 +1,23 @@
+Dataset: creditcard
+Best model by PR-AUC: XGBoost
+PR-AUC: 0.874839
+ROC-AUC: 0.980628
+Training seconds: 11.770
+Classification report at threshold 0.5:
+              precision    recall  f1-score   support
+
+  Legitimate     0.9997    0.9998    0.9997     56864
+       Fraud     0.8632    0.8367    0.8497        98
+
+    accuracy                         0.9995     56962
+   macro avg     0.9314    0.9183    0.9247     56962
+weighted avg     0.9995    0.9995    0.9995     56962
+
+All successful model metrics:
+        model   pr_auc  roc_auc  precision   recall  f1_score  training_seconds
+      XGBoost 0.874839 0.980628   0.863158 0.836735  0.849741         11.769924
+     CatBoost 0.850401 0.980139   0.708333 0.867347  0.779817         16.238549
+       TabNet 0.827428 0.972393   0.241096 0.897959  0.380130        512.997687
+Random Forest 0.821621 0.983698   0.835052 0.826531  0.830769         38.179543
+          SVM 0.734615 0.974216   0.802817 0.581633  0.674556          9.355803
+     LightGBM 0.093040 0.877708   0.105744 0.826531  0.187500          5.270593

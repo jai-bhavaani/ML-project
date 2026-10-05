@@ -1,0 +1,23 @@
+Dataset: ieee_cis
+Best model by PR-AUC: LightGBM
+PR-AUC: 0.524710
+ROC-AUC: 0.885409
+Training seconds: 1.732
+Classification report at threshold 0.5:
+              precision    recall  f1-score   support
+
+  Legitimate     0.9872    0.9488    0.9676      9650
+       Fraud     0.3186    0.6600    0.4298       350
+
+    accuracy                         0.9387     10000
+   macro avg     0.6529    0.8044    0.6987     10000
+weighted avg     0.9638    0.9387    0.9488     10000
+
+All successful model metrics:
+        model   pr_auc  roc_auc  precision   recall  f1_score  training_seconds
+     LightGBM 0.524710 0.885409   0.318621 0.660000  0.429767          1.731507
+      XGBoost 0.502484 0.884373   0.305405 0.645714  0.414679          2.307043
+     CatBoost 0.460805 0.879138   0.202922 0.714286  0.316056          4.092261
+Random Forest 0.396616 0.845912   0.241656 0.517143  0.329390          1.366978
+          SVM 0.285250 0.807690   0.696970 0.065714  0.120104        287.590186
+       TabNet 0.272305 0.803882   0.105148 0.688571  0.182438        110.066651

@@ -1,0 +1,23 @@
+Dataset: paysim
+Best model by PR-AUC: CatBoost
+PR-AUC: 1.000000
+ROC-AUC: 1.000000
+Training seconds: 2.216
+Classification report at threshold 0.5:
+              precision    recall  f1-score   support
+
+  Legitimate     1.0000    1.0000    1.0000     19941
+       Fraud     1.0000    1.0000    1.0000        59
+
+    accuracy                         1.0000     20000
+   macro avg     1.0000    1.0000    1.0000     20000
+weighted avg     1.0000    1.0000    1.0000     20000
+
+All successful model metrics:
+        model   pr_auc  roc_auc  precision   recall  f1_score  training_seconds
+     CatBoost 1.000000 1.000000   1.000000 1.000000  1.000000          2.216273
+     LightGBM 1.000000 1.000000   1.000000 1.000000  1.000000          0.576357
+      XGBoost 1.000000 1.000000   1.000000 1.000000  1.000000          0.655520
+Random Forest 1.000000 1.000000   1.000000 1.000000  1.000000          0.944164
+       TabNet 0.891543 0.998293   1.000000 0.491525  0.659091         44.517652
+          SVM 0.795791 0.963180   0.945946 0.593220  0.729167          5.875943
