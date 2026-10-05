@@ -1,0 +1,11 @@
+scikit-learn>=1.4
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+pytorch-tabnet>=4.1
+torch>=2.2
+pandas>=2.1
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+joblib>=1.3
